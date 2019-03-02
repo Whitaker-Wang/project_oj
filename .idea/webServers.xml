@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="68100fec-1672-4a35-b59e-07b5ca53ee1a" name="project_oj" url="http://192.168.106.134">
+        <fileTransfer host="192.168.106.134" port="22" rootFolder="/home/bri/project_oj" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

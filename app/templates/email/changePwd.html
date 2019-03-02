@@ -1,0 +1,6 @@
+<p>亲爱的 {{ user.username }},</p>
+<p>最近有人在验证电子邮件地址时输入了该电子邮件地址。</p>
+<p>要更改您帐户的密码，请点击以下链接： <a href="{{ url_for('api.find_pwd', token=token, _external=True) }}">click here</a>.</p>
+<p>或者，您可以在浏览器的地址栏中粘贴下面的链接：</p>
+<p>{{ url_for('api.find_pwd', token=token, _external=True) }}</p>
+<p><small>注意：如果这不是您本人所为，则可能是有人误输了您的电子邮件地址。请勿将此验证码泄露给他人，并且您目前无需执行任何其它操作。</small></p>
