@@ -8,7 +8,8 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     FLASKY_MAIL_SUBJECT_PREFIX = '[FLASKY]'
     FLASKY_MAIL_SENDER = '1059291245@qq.com'
-    FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
+    # FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
+    FLASKY_ADMIN = 'FLASKY_ADMIN'
     # QUESTIONS_PER_PAGE = int(os.environ.get('FLASKY_POSTS_PER_PAGE'))
     QUESTIONS_PER_PAGE = 10
     JSON_AS_ASCII = False
@@ -25,10 +26,13 @@ class DevelopementConfig(Config):
     MAIL_PORT = 465
     MAIL_USE_TLS = False
     MAIL_USE_SSL = True
-    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or \
-                              'sqlite:////' + os.path.join(basedir, 'data-dev.sqlite')
+    # MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
+    MAIL_USERNAME = '1059291245@qq.com '
+    # MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
+    MAIL_PASSWORD = 'sfuailiimgbtbbda'
+    # SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or \
+    #                           'sqlite:////' + os.path.join(basedir, 'data-dev.sqlite')
+    SQLALCHEMY_DATABASE_URI = 'mysql://root:1059291245@localhost:3306/oj?charset=utf8'
 
 
 class TestingConfig(Config):
